@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Crimson Text", serif;
+}
+
+.logo{
+    height: auto;
+    width: 20vw;
+}
+
+.ab{
+    height: auto;
+    width: 20vw;
+}
+
+body{
+    background-image: url(../assets/fondo2.png);
+    background-size: contain;
+}
+
+h1{
+    color: black;
+}
+
+
+p{
+    color: black;
+    font-size: 1,50rem;
+    font-family: "Story Script", sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: rgb(255, 167, 3);
+    text-decoration: none;
+}
+
+.img{
+    height: auto;
+    width: 5vw;
+}
+
+
