@@ -4,72 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../assets/logo.png" alt="Logo de AluPon" class="logo">
-        </a>
-     
-    <a href="../index.html">
-        <h1>Galería</h1> 
-    </a>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="./historia.html">Historia</a>
-            </li>
-            <li>
-                <a href="./galeria.html">Galería</a>
-            </li>
-            <li>
-                <a href="./contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    </header>
-   
-    <main>
-        <div>
-             <h4>Algunas imágenes de nuestros trabajos:</h4>
-             <img src="../assets/1.jpeg" alt="Aberturas blancas de ventanas" class="ab">
-             <img src="../assets/2.jpeg" alt="Portón negro" class="ab">
-             <img src="../assets/3.jpeg" alt="Ventanas de abrir negra" class="ab">
-             <img src="../assets/4.jpeg" alt="Ventanas fijas negras" class="ab">
-             <img src="../assets/5.jpeg" alt="Cierre de quincho con aberturas negras" class="ab">
+    <header class="container py-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+            <a href="../index.html" class="text-center">
+                <img src="../assets/logo.png" alt="Logo de AluPon" class="logo">
+            </a>
+            <div class="text-center text-md-start">
+                <h1 class="mb-1">Galería</h1>
+                <p class="mb-0">Algunas imágenes de nuestros trabajos.</p>
+            </div>
         </div>
 
-    </main>
-    
-    <footer>
-        <h2>Derechos Reservados</h2>
-        <h2>Creado por Thiago</h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/aluponaberturas?igsh=MWh2enIyeXgzcHlvdw==" target="_blank">
-                        <img src="../assets/logos/instagram.png" alt="Logo de Instagram" class="img">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=61555148906244" target="_blank">
-                        <img src="../assets/logos/facebook.png" alt="Logo de Facebook" class="img">
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                        <img src="../assets/logos/whatsapp.png" alt="Logo de WhatsApp" class="img wpp">
-                    </a>
-                </li>
+        <nav class="mt-4">
+            <ul class="nav justify-content-center nav-pills gap-2">
+                <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="./historia.html">Historia</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+    </header>
 
+    <main class="container py-4">
+        <section class="feature-card p-4 mb-4 d-flex flex-column flex-md-row justify-content-between gap-3">
+            <div>
+                <h2 class="h4 mb-2">Trabajos recientes</h2>
+                <p>
+                    Compartimos una selección de proyectos terminados para que puedas ver terminaciones, estilos y configuraciones que realizamos en aluminio.
+                </p>
+            </div>
+            <a class="btn btn-warning align-self-md-center" href="./contacto.html">Pedir presupuesto</a>
+        </section>
+
+        <section class="gallery-grid">
+            <article class="gallery-item feature-card p-2">
+                <img src="../assets/1.jpeg" alt="Aberturas blancas de ventanas" class="gallery-image">
+                <p class="small mt-2 mb-1 px-2">Aberturas blancas para vivienda familiar.</p>
+            </article>
+            <article class="gallery-item feature-card p-2">
+                <img src="../assets/2.jpeg" alt="Portón negro" class="gallery-image">
+                <p class="small mt-2 mb-1 px-2">Portón de aluminio negro con diseño moderno.</p>
+            </article>
+            <article class="gallery-item feature-card p-2">
+                <img src="../assets/3.jpeg" alt="Ventanas de abrir negra" class="gallery-image">
+                <p class="small mt-2 mb-1 px-2">Ventanas de abrir con excelente aislación.</p>
+            </article>
+            <article class="gallery-item feature-card p-2">
+                <img src="../assets/4.jpeg" alt="Ventanas fijas negras" class="gallery-image">
+                <p class="small mt-2 mb-1 px-2">Ventanas fijas para iluminación natural.</p>
+            </article>
+            <article class="gallery-item feature-card p-2">
+                <img src="../assets/5.jpeg" alt="Cierre de quincho con aberturas negras" class="gallery-image">
+                <p class="small mt-2 mb-1 px-2">Cierre de quincho con perfilería negra.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="container py-4 mt-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="text-center text-md-start">
+                <h2 class="h5 mb-1">Derechos Reservados</h2>
+                <h2 class="h6 mb-0">Creado por Thiago</h2>
+            </div>
+            <nav>
+                <ul class="d-flex align-items-center gap-3 mb-0">
+                    <li><a href="https://www.instagram.com/aluponaberturas?igsh=MWh2enIyeXgzcHlvdw==" target="_blank"><img src="../assets/logos/instagram.png" alt="Logo de Instagram" class="img"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61555148906244" target="_blank"><img src="../assets/logos/facebook.png" alt="Logo de Facebook" class="img"></a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/logos/whatsapp.png" alt="Logo de WhatsApp" class="img wpp"></a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
