@@ -1,0 +1,100 @@
+// ================================
+// COMPONENTS
+// ================================
+
+// --- Placeholder extendible: card base ---
+%card-shared {
+    @include card-base();
+}
+
+// --- Logo e íconos ---
+.logo {
+    width: $logo-width;
+    height: auto;
+}
+
+.img {
+    width: $icon-width;
+    height: auto;
+}
+
+// --- Navegación ---
+.nav-pills {
+    .nav-link {
+        color: $color-text-nav;
+        border: $border-nav;
+        background-color: $color-nav-bg;
+        @include transition(background-color, 0.25s);
+
+        &.active,
+        &:hover {
+            background-color: $color-primary-alt;
+            color: $color-text-dark;
+        }
+    }
+}
+
+// --- Grids ---
+.hero-grid,
+.about-grid,
+.timeline-grid {
+    @include grid(repeat(2, minmax(0, 1fr)));
+}
+
+.gallery-grid {
+    @include grid(repeat(3, minmax(0, 1fr)));
+}
+
+// --- Cards ---
+.feature-card {
+    @extend %card-shared;
+    @include transition(transform box-shadow, 0.35s);
+}
+
+.intro-card {
+    @extend %card-shared;
+    @include transition(transform box-shadow, 0.35s);
+}
+
+// --- Benefits list ---
+.benefits-list {
+    padding-left: $padding-list;
+
+    li {
+        list-style: disc;
+        font-family: $font-secondary;
+        font-size: $font-size-md;
+    }
+}
+
+// --- Contact layout ---
+.contact-layout {
+    @include grid(1fr 1fr);
+    grid-template-areas:
+        "datos formulario"
+        "mapa  mapa";
+
+    .datos-contacto    { grid-area: datos; }
+    .formulario-contacto { grid-area: formulario; }
+    .mapa              { grid-area: mapa; }
+}
+
+// --- Gallery ---
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: $border-radius-img;
+}
+
+.gallery-image {
+    width: 100%;
+    height: $gallery-img-height;
+    object-fit: cover;
+    border-radius: $border-radius-img;
+    @include transition(transform, 0.4s);
+
+    &:hover {
+        transform: scale(1.08);
+    }
+}

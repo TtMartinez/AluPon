@@ -1,0 +1,56 @@
+// ================================
+// VARIABLES
+// ================================
+
+// Colores
+$color-primary:       rgb(255, 167, 3);
+$color-primary-alt:   #ffc107;
+$color-text:          #111;
+$color-text-dark:     #212529;
+$color-text-nav:      #1f1f1f;
+$color-nav-border:    #c7b999;
+$color-nav-bg:        rgba(255, 255, 255, 0.6);
+$color-card-bg:       rgba(255, 255, 255, 0.84);
+$color-shadow:        rgba(0, 0, 0, 0.08);
+
+// Tipografía
+$font-primary:        "Crimson Text", serif;
+$font-secondary:      "Story Script", sans-serif;
+$font-size-base:      1.15rem;
+$font-size-md:        1.1rem;
+$font-size-sm:        1.05rem;
+$line-height-base:    1.4;
+
+// Espaciado
+$gap-base:            1rem;
+$padding-list:        1rem;
+
+// Bordes y sombras
+$border-radius-card:  12px;
+$border-radius-img:   8px;
+$box-shadow-card:     0 4px 20px $color-shadow;
+$border-nav:          1px solid $color-nav-border;
+
+// Imágenes
+$gallery-img-height:        260px;
+$gallery-img-height-sm:     210px;
+
+// Breakpoints
+$bp-md:               992px;
+$bp-sm:               576px;
+
+// Logo
+$logo-width:          clamp(130px, 18vw, 220px);
+$icon-width:          clamp(30px, 3vw, 48px);
+
+// Carrusel galería
+$carousel-speed:      0.5s;
+$carousel-height:     500px;
+$carousel-height-sm:  320px;
+$carousel-max-width:  520px;
+
+// Redes sociales
+$social-bounce-height: -8px;
+$social-glow-instagram: rgba(225, 48, 108, 0.6);
+$social-glow-facebook:  rgba(24, 119, 242, 0.6);
+$social-glow-whatsapp:  rgba(37, 211, 102, 0.6);

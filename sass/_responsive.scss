@@ -1,0 +1,46 @@
+// ================================
+// RESPONSIVE
+// ================================
+
+@media (max-width: $bp-md) {
+
+    .hero-grid,
+    .about-grid,
+    .timeline-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "datos"
+            "formulario"
+            "mapa";
+    }
+
+    p {
+        font-size: $font-size-sm;
+    }
+}
+
+@media (max-width: $bp-sm) {
+
+    body {
+        background-size: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+
+        &-pills .nav-link {
+            text-align: center;
+        }
+    }
+
+    .gallery-image {
+        // Operador: altura reducida en mobile
+        height: $gallery-img-height - 50px;
+    }
+}

@@ -1,0 +1,43 @@
+// ================================
+// MIXINS
+// ================================
+
+// Grid genérico
+@mixin grid($columns, $gap: $gap-base) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+// Card base (fondo blanco traslúcido + sombra + border-radius)
+@mixin card-base($radius: $border-radius-card, $bg: $color-card-bg, $shadow: $box-shadow-card) {
+    border-radius: $radius;
+    background-color: $bg;
+    box-shadow: $shadow;
+}
+
+// Responsive: colapso a 1 columna
+@mixin responsive-single-col($bp: $bp-md) {
+    @media (max-width: $bp) {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Transición genérica
+@mixin transition($properties: all, $duration: 0.3s, $ease: ease) {
+    transition: $properties $duration $ease;
+}
+
+// Transformación hover: scale
+@mixin hover-scale($scale: 1.03) {
+    &:hover {
+        transform: scale($scale);
+    }
+}
+
+// Flex centrado
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
