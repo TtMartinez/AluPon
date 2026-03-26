@@ -185,6 +185,18 @@ a {
   cursor: pointer;
 }
 
+.team-container {
+  display: flex;
+  justify-content: center;
+}
+
+.team-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
 @keyframes slide1 {
   0% {
     opacity: 1;
@@ -422,6 +434,53 @@ p {
 .nav-pills .nav-link:hover::after, .nav-pills .nav-link.active::after {
   width: 100%;
   left: 0;
+}
+
+/* CONTENEDOR DE EQUIPO */
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap; /* responsive */
+  margin-top: 20px;
+}
+
+/* CARD DE CADA PERSONA */
+.team-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 15px;
+  max-width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* EFECTO HOVER */
+.team-container:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(255, 167, 3, 0.35);
+}
+
+/* IMAGEN */
+.team-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* ZOOM SUAVE */
+.team-container:hover .team-image {
+  transform: scale(1.05);
+}
+
+/* TEXTO */
+.team-container p {
+  font-size: 1rem;
+  margin-top: 5px;
 }
 
 @keyframes socialBounce {
